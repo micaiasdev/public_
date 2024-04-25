@@ -16,12 +16,12 @@ class ListaEncadeada:
     if self.inicio is None:
       self.final = novo
       self.inicio = novo 
-    
-    novo.nextData = self.inicio
-    
-    self.inicio = novo
-    
-    self.tam += 1
+    else:
+      novo.nextData = self.inicio
+      
+      self.inicio = novo
+      
+      self.tam += 1
   
   def addFinal(self, item): 
     novo = Node(item)
